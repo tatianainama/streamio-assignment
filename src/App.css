@@ -15,6 +15,7 @@
   --elevation-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --border-radius: 1.5rem;
   --padding: 42px;
+  --padding-lg: 64px;
 }
 
 * {
@@ -47,13 +48,17 @@ aside.drawer nav {
 }
 
 aside.drawer .drawer__logo {
-  width: 64px;
+  width: 32px;
 }
 .main {
   flex: 1 0 auto;
 }
 
 .main-content__container {
-  padding: var(--padding);
+  padding: var(--padding) var(--padding-lg);
   padding-top: 0;
+}
+
+.main-content__container section:not(:first-child) {
+  margin-top: 2rem;
 }

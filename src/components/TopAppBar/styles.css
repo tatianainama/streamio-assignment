@@ -1,6 +1,6 @@
 .top-app-bar {
   display: flex;
-  padding: var(--padding);
+  padding: var(--padding) var(--padding-lg);
 }
 
 .top-app-bar__search {
