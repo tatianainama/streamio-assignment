@@ -6,6 +6,7 @@ import Chip from 'components/Chip';
 import TopAppBar from 'components/TopAppBar';
 import Banner from 'components/Banner';
 import HospitalMasonry from 'components/HospitalMasonry';
+import Badge from 'components/Badge';
 
 import sampleImg from './sample.png';
 import bannerImg from './banner.png';
@@ -33,6 +34,16 @@ function App() {
     { icon: 'doctor', label: 'recovered', value: '98.7k', link: '#', color: 'primary'},
     { icon: 'volunteer', label: 'testing done', value: '321.4k', link: '#' },
   ];
+
+  const bannerData = {
+    title: 'Northwestern Memorial Hospital',
+    subtitle: '251 E Huron St, Chicago, IL 60611, United States',
+    img: bannerImg,
+    badges: [
+      { icon: 'person', primary: '3.8k', secondary: 'Total doctors'},
+      { icon: 'location_city', primary: '21', secondary: 'Number of cities'}
+    ]
+  };
 
   return (
     <div className="dashboard">
@@ -69,10 +80,13 @@ function App() {
             <section>
               <h2>Analytics Overview</h2>
               <Banner
-                title="Northwestern Memorial Hospital"
-                subTitle="251 E Huron St, Chicago, IL 60611, United States"
-                img={bannerImg}
-                support={(<div>total doctors</div>)}
+                title={bannerData.title}
+                subTitle={bannerData.subtitle}
+                img={bannerData.img}
+                support={bannerData.badges.map((badge, key) => (
+                    <Badge {...badge} key={key}/>
+                  ))
+                }
               ></Banner>
             </section>
             <section>

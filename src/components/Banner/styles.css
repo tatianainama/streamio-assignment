@@ -13,7 +13,13 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 .banner__content__title h3 {
   font-size: 1.7rem;
   margin: 0 0 1rem 0;
+}
+
+.banner__content__support {
+  display: inline-flex;
+  gap: var(--padding);
 }

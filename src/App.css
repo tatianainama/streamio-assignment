@@ -21,10 +21,6 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-}
-
 body {
   color: var(--main-font-color);
   background-color: #eef1f3;
