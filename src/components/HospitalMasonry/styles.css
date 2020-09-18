@@ -5,15 +5,43 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
-.hospital-stats .item {
+.hospital-stats .stat {
   display: flex;
 }
 
-.hospital-stats .item > div {
+.hospital-stats .stat > div {
   flex: 1;
 }
 
-.hospital-stats .large {
+.hospital-stats .stat--large {
   grid-row: auto / span 2;
 }
 
+.stat h3 {
+  font-size: 2rem;
+  margin: 1rem 0 ;
+}
+
+.stat .stat__desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat .stat__desc p {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--muted-color);
+}
+
+.stat .stat__graph { 
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.stat .stat__graph > img {
+  width: 100%;
+}

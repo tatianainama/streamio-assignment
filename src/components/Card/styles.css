@@ -24,7 +24,7 @@
 
 .card.card--primary {
   background-color: var(--primary-light-color);
-  color: var(--primary-font-color)
+  color: var(--primary-font-color);
 }
 
 .card.card--accent {
@@ -33,4 +33,6 @@
 
 .card__content {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
