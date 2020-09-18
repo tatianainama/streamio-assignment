@@ -33,23 +33,6 @@ body {
   height: 100%;
 }
 
-aside.drawer {
-  width: 300px;
-  background-color: var(--drawer-bg-color);
-  padding: var(--padding);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-aside.drawer nav {
-  display: flex;
-  flex-direction: column;
-}
-
-aside.drawer .drawer__logo {
-  width: 32px;
-}
 .main {
   flex: 1 0 auto;
 }

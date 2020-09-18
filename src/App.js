@@ -1,18 +1,14 @@
 import React from 'react';
 
-import Link from 'components/Link';
-import Card from 'components/Card';
-import Chip from 'components/Chip';
 import TopAppBar from 'components/TopAppBar';
 import Banner from 'components/Banner';
 import HospitalMasonry from 'components/HospitalMasonry';
 import Badge from 'components/Badge';
+import Drawer from 'components/Drawer';
 
-import sampleImg from './sample.png';
 import bannerImg from './banner.png';
 import graph1 from './graph1.png';
 import graph2 from './graph2.png';
-import { ReactComponent as Logo } from 'logo.svg';
 
 import './normalize.css';
 import './App.css';
@@ -47,32 +43,7 @@ function App() {
 
   return (
     <div className="dashboard">
-      <aside className="drawer">
-        <div className="drawer__logo">
-          <Logo></Logo>
-        </div>
-
-        <nav className="nav-links">
-          {
-            drawerLinks.map((link, key) => (
-              <Link key={key} href={link.href} icon={{custom: link.icon, size: 'xsmall'}}>
-                {link.label}
-              </Link>
-            ))
-          }
-        </nav>
-        <div>
-          <Card
-            align="center"
-          >
-            <div>
-              <Chip>New</Chip>
-            </div>
-            <h3>Northwester Mem-Hospital</h3>
-            <img src={sampleImg} alt="news"></img>
-          </Card>
-        </div>
-      </aside>
+      <Drawer drawerLinks={drawerLinks}/>
       <div className="main">
         <div className="menu">
           <TopAppBar></TopAppBar>
