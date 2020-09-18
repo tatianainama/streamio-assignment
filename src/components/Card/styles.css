@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+.card:hover {
+  box-shadow: var(--elevation-shadow);
+}
+
 .card.card--bordered {
   border: 1px solid var(--border-color);
 }
