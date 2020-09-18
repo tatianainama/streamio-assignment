@@ -4,9 +4,9 @@ import Banner from 'components/Banner';
 import HospitalMasonry from 'components/HospitalMasonry';
 import Badge from 'components/Badge';
 
-import bannerImg from 'banner.png';
-import graph1 from 'graph1.png';
-import graph2 from 'graph2.png';
+import bannerImg from './banner.png';
+import graph1 from './graph1.png';
+import graph2 from './graph2.png';
 
 const Dashboard = () => {
   
