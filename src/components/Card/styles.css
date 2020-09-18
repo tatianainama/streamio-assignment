@@ -27,6 +27,10 @@
   color: var(--primary-font-color);
 }
 
+.card.card--primary svg {
+  fill: var(--primary-font-color);
+}
+
 .card.card--accent {
   background-color: var(--accent-color);
 }

@@ -8,6 +8,10 @@
   color: var(--primary-color);
 }
 
+.menu-link svg {
+  fill: var(--primary-color);
+}
+
 .menu-link:hover {
   box-shadow: var(--elevation-shadow);
   background-color: #fff;
