@@ -12,3 +12,12 @@
   justify-content: flex-end;
   display: flex;
 }
+
+.top-app-bar__actions__notifications {
+  border-right: 1px solid var(--border-color);
+  padding: 0 calc(var(--padding)/2);
+}
+
+.top-app-bar__actions__settings {
+  padding: 0 calc(var(--padding)/2);
+}
