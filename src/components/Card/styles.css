@@ -1,0 +1,18 @@
+.card {
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.card--left {
+  text-align: left;
+}
+
+.card.card--center {
+  text-align: center;
+}
+
+.card__content {
+  flex: 1 0 auto;
+}

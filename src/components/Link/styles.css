@@ -1,0 +1,18 @@
+.menu-link {
+  padding: 16px 24px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.menu-link:hover {
+  box-shadow: var(--elevation-shadow);
+  background-color: #fff;
+}
+
+.menu-link:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,14 @@
+.top-app-bar {
+  display: flex;
+  padding: var(--padding);
+}
+
+.top-app-bar__search {
+  flex: 1 0 0;
+}
+
+.top-app-bar__actions {
+  flex: 1 0 auto;
+  justify-content: flex-end;
+  display: flex;
+}

@@ -1,0 +1,9 @@
+.chip {
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
