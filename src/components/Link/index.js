@@ -1,10 +1,18 @@
 import React from 'react';
+import Icon from 'components/Icon';
 
 import './styles.css';
 
-const Link = ({ href, children }) => {
+const Link = ({ href, icon, children }) => {
   return (
-    <a className="menu-link" href={href}>{children}</a>
+    <a className="menu-link" href={href}>
+      <span>
+        { icon ? (
+          <Icon {...icon} />
+        ) : null }
+        { children }
+      </span>
+    </a>
   )
 };
 

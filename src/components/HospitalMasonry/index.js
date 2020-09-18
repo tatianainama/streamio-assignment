@@ -21,10 +21,8 @@ const HospitalMasonry = ({
             >
               <h3>
                 <Icon
-                  icon={{
-                    strategy: 'component',
-                    icon: (<stat.icon/>)
-                  }}
+                  custom={stat.icon}
+                  size='large'
                 /> <br/>
                 {stat.value}
               </h3>

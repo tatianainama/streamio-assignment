@@ -16,3 +16,12 @@
 .menu-link:last-child {
   margin-bottom: 0;
 }
+
+.menu-link span {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link span i.rmwc-icon {
+  margin-right: 1rem;
+}

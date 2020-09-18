@@ -49,6 +49,9 @@ aside.drawer nav {
   flex-direction: column;
 }
 
+aside.drawer .drawer__logo {
+  width: 64px;
+}
 .main {
   flex: 1 0 auto;
 }
