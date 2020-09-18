@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Card from 'components/Card';
+import IconButton from 'components/IconButton';
+import Icon from 'components/Icon';
 
 import './styles.css';
 
@@ -18,12 +20,17 @@ const HospitalMasonry = ({
               color={stat.color}
             >
               <h3>
-                * <br/>
+                <Icon
+                  icon={{
+                    strategy: 'component',
+                    icon: (<stat.icon/>)
+                  }}
+                /> <br/>
                 {stat.value}
               </h3>
               <div className="stat__desc">
                 <p>{ stat.label }</p>
-                <div>+</div>
+                <IconButton icon="north_east" />
               </div>
               {
                 stat.graph ? (

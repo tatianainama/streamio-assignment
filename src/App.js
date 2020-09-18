@@ -11,6 +11,7 @@ import sampleImg from './sample.png';
 import bannerImg from './banner.png';
 import graph1 from './graph1.png';
 import graph2 from './graph2.png';
+import { ReactComponent as Icon } from 'icons/heartbeat.svg';
 
 import './normalize.css';
 import './App.css';
@@ -25,12 +26,12 @@ function App() {
   ];
 
   const hospitalStats = [
-    { icon: 'icon', label: 'corona cases', value: '289.2k', link: '#' },
-    { icon: 'icon', label: 'active cases', value: '96.3k', link: '#', graph: graph1 },
-    { icon: 'icon', label: 'deaths', value: '23.6k', link: '#', color: 'accent' },
-    { icon: 'icon', label: 'beds available', value: '2.8k', link: '#', graph: graph2 },
-    { icon: 'icon', label: 'recovered', value: '98.7k', link: '#', color: 'primary'},
-    { icon: 'icon', label: 'testing done', value: '321.4k', link: '#' },
+    { icon: Icon, label: 'corona cases', value: '289.2k', link: '#' },
+    { icon: Icon, label: 'active cases', value: '96.3k', link: '#', graph: graph1 },
+    { icon: Icon, label: 'deaths', value: '23.6k', link: '#', color: 'accent' },
+    { icon: Icon, label: 'beds available', value: '2.8k', link: '#', graph: graph2 },
+    { icon: Icon, label: 'recovered', value: '98.7k', link: '#', color: 'primary'},
+    { icon: Icon, label: 'testing done', value: '321.4k', link: '#' },
   ];
 
   return (
