@@ -55,4 +55,5 @@ aside.drawer .drawer__logo {
 
 .main-content__container {
   padding: var(--padding);
+  padding-top: 0;
 }

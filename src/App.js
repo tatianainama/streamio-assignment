@@ -65,7 +65,9 @@ function App() {
           <Card
             align="center"
           >
-            <Chip>New</Chip>
+            <div>
+              <Chip>New</Chip>
+            </div>
             <h3>Northwester Mem-Hospital</h3>
             <img src={sampleImg} alt="news"></img>
           </Card>
