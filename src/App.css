@@ -3,13 +3,20 @@
   --main-bg-color: #ffffff;
   --drawer-bg-color: #fafafa;
   --main-font-color: #38364C;
+  --primary-font-color: #fff;
   --primary-color: #444679;
   --primary-light-color: #685cb6;
   --secondary-color: #ffbbc1;
   --accent-color: #ffefd5;
+  --banner-color: #d3f5ff;
+  --border-color: #eaeaef;
   --elevation-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --border-radius: 40px;
+  --border-radius: 1.5rem;
   --padding: 42px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html, body, #root {

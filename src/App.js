@@ -1,11 +1,14 @@
 import React from 'react';
 
-import Link from './components/Link';
-import Card from './components/Card';
-import Chip from './components/Chip';
-import TopAppBar from './components/TopAppBar';
+import Link from 'components/Link';
+import Card from 'components/Card';
+import Chip from 'components/Chip';
+import TopAppBar from 'components/TopAppBar';
+import Banner from 'components/Banner';
+import HospitalMasonry from 'components/HospitalMasonry';
 
 import sampleImg from './sample.png';
+import bannerImg from './banner.png';
 
 import './normalize.css';
 import './App.css';
@@ -17,6 +20,15 @@ function App() {
     { label: 'organization', href: '#' },
     { label: 'department', href: '#' },
     { label: 'settings', href: '#' }
+  ];
+
+  const hospitalStats = [
+    { icon: 'icon', label: 'corona cases', value: '289.2k', link: '#' },
+    { icon: 'icon', label: 'active cases', value: '96.3k', link: '#', graph: true },
+    { icon: 'icon', label: 'deaths', value: '23.6k', link: '#', color: 'accent' },
+    { icon: 'icon', label: 'beds available', value: '2.8k', link: '#', graph: true },
+    { icon: 'icon', label: 'recovered', value: '98.7k', link: '#', color: 'primary'},
+    { icon: 'icon', label: 'testing done', value: '321.4k', link: '#' },
   ];
 
   return (
@@ -49,10 +61,19 @@ function App() {
         </div>
         <div className="main-content">
           <div className="main-content__container">
-            <h2>Analytics Overview</h2>
-            <p>
-              stuff
-            </p>
+            <section>
+              <h2>Analytics Overview</h2>
+              <Banner
+                title="Northwestern Memorial Hospital"
+                subTitle="251 E Huron St, Chicago, IL 60611, United States"
+                img={bannerImg}
+                support={(<div>total doctors</div>)}
+              ></Banner>
+            </section>
+            <section>
+              <h2>Hospital Stats</h2> 
+              <HospitalMasonry hospitalStats={hospitalStats} />
+            </section>
           </div>
         </div>
       </div>

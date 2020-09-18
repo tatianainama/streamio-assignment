@@ -1,0 +1,19 @@
+.hospital-stats {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.hospital-stats .item {
+  display: flex;
+}
+
+.hospital-stats .item > div {
+  flex: 1;
+}
+
+.hospital-stats .large {
+  grid-row: auto / span 2;
+}
+

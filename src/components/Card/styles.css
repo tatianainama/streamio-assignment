@@ -1,8 +1,13 @@
 .card {
   border-radius: var(--border-radius);
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  padding: calc(var(--padding)/2);
+  height: 100%;
+}
+
+.card.card--bordered {
+  border: 1px solid var(--border-color);
 }
 
 .card.card--left {
@@ -11,6 +16,19 @@
 
 .card.card--center {
   text-align: center;
+}
+
+.card.card--default {
+  background-color: #fff;
+}
+
+.card.card--primary {
+  background-color: var(--primary-light-color);
+  color: var(--primary-font-color)
+}
+
+.card.card--accent {
+  background-color: var(--accent-color);
 }
 
 .card__content {
