@@ -1,0 +1,9 @@
+.under-construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  text-align: center;
+}

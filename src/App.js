@@ -9,24 +9,17 @@ import {
 import TopAppBar from 'components/TopAppBar';
 import Drawer from 'components/Drawer';
 
-import Dashboard from 'containers/Dashboard';
+import routes from 'routeConfig';
 
 import './normalize.css';
 import './App.css';
 
 function App() {
-  const drawerLinks = [
-    { icon: 'dashboard', label: 'dashboard', href: '/dashboard' },
-    { icon: 'hospital-sign', label: 'dr. profiles', href: '/dr-profiles' },
-    { icon: 'secure-shield', label: 'organization', href: '/organization' },
-    { icon: 'shield', label: 'department', href: '/department' },
-    { icon: 'apple', label: 'settings', href: '/settings' }
-  ];
-
+  
   return (
     <Router>
       <div className="dashboard">
-        <Drawer drawerLinks={drawerLinks}/>
+        <Drawer drawerLinks={routes}/>
         <div className="main">
           <div className="menu">
             <TopAppBar></TopAppBar>
@@ -35,9 +28,11 @@ function App() {
             <div className="main-content__container">
               <Switch>
                 <Route exact path="/" render={() => (<Redirect to="/dashboard"/>)}></Route>
-                <Route path="/dashboard">
-                  <Dashboard/>
-                </Route>
+                {
+                  routes.map((route, key) => (
+                    <Route path={route.href} key={key} render={route.component}/>
+                  ))
+                }
               </Switch>
             </div>
           </div>
