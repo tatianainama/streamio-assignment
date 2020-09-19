@@ -16,6 +16,7 @@
   --border-radius: 1.5rem;
   --padding: 42px;
   --padding-lg: 64px;
+  --padding-sm: 24px;
 }
 
 * {
@@ -24,17 +25,20 @@
 
 body {
   color: var(--main-font-color);
-  background-color: #eef1f3;
+  background-color: var(--body-bg-color);
 }
 
 .dashboard {
   background-color: var(--main-bg-color);
   display: flex;
   height: 100%;
+  margin: var(--pading-lg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .main {
-  flex: 1 1 auto;
+  flex: 1 1 75%;
 }
 
 .main-content__container {
@@ -44,4 +48,24 @@ body {
 
 .main-content__container section:not(:first-child) {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 1025px) {
+  :root {
+    --padding: 24px;
+    --padding-sm: 22px;
+    --padding-lg: 32px;
+  }
+  .dashboard {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  :root {
+    --padding: 16px;
+    --padding-lg: 16px;
+    --padding-sm: 12px;
+  }
 }

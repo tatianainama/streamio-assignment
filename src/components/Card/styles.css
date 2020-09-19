@@ -2,7 +2,7 @@
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  padding: calc(var(--padding)/2);
+  padding: var(--padding-sm);
   height: 100%;
 }
 

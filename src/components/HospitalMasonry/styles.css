@@ -45,3 +45,12 @@
 .stat .stat__graph > img {
   width: 100%;
 }
+
+
+@media screen and (max-width: 769px) {
+  .hospital-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
