@@ -1,18 +1,19 @@
 import React from 'react';
 import Icon from 'components/Icon';
+import { NavLink } from 'react-router-dom';
 
 import './styles.css';
 
 const Link = ({ href, icon, children }) => {
   return (
-    <a className="menu-link" href={href}>
+    <NavLink className="menu-link" to={href} activeClassName="menu-link--active">
       <span>
         { icon ? (
           <Icon {...icon} />
         ) : null }
         { children }
       </span>
-    </a>
+    </NavLink>
   )
 };
 

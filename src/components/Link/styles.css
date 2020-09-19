@@ -12,7 +12,8 @@
   fill: var(--primary-color);
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.menu-link--active {
   box-shadow: var(--elevation-shadow);
   background-color: #fff;
 }
