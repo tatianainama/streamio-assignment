@@ -4,12 +4,13 @@ aside.drawer {
   padding: var(--padding);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 aside.drawer nav {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  padding: var(--padding) 0;
 }
 
 aside.drawer .drawer__logo {
