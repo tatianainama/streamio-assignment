@@ -17,6 +17,7 @@
   --padding: 42px;
   --padding-lg: 64px;
   --padding-sm: 24px;
+  --drawer-size: 300px;
 }
 
 * {
@@ -32,7 +33,7 @@ body {
   background-color: var(--main-bg-color);
   display: flex;
   height: 100%;
-  margin: var(--pading-lg);
+  margin: var(--padding-lg);
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -50,11 +51,12 @@ body {
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
   :root {
     --padding: 24px;
     --padding-sm: 22px;
     --padding-lg: 32px;
+    --drawer-size: 225px;
   }
   .dashboard {
     margin: 0;
@@ -62,7 +64,7 @@ body {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 940px) {
   :root {
     --padding: 16px;
     --padding-lg: 16px;

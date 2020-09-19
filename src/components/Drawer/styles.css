@@ -1,5 +1,5 @@
 aside.drawer {
-  width: 300px;
+  width: var(--drawer-size);
   background-color: var(--drawer-bg-color);
   padding: var(--padding);
   display: flex;
@@ -16,3 +16,4 @@ aside.drawer nav {
 aside.drawer .drawer__logo {
   width: 32px;
 }
+
