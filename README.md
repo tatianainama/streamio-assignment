@@ -55,3 +55,7 @@ Since I didn't have enough time to build the app, I used some already-made compo
 3. Functionality: I added a container page for each of the `drawer`'s links, but they are all blank (only an *under construction* sign is shown).
 5. Design system (I would have it complemented with [storybooks](https://storybook.js.org/) components)
 6. Animations (There is only a Ripple effect on the `IconButtons`)
+
+## Known issues
+
+There is a warning about `findDOMNode` being deprecated in StrictMode, this is coming from the Input component from RMWC, I did not have time to debug the issue or report it to the project.
