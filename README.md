@@ -1,8 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <img src="./public/logo192.png" width="20"/> Stream io Dashboard Assignment
 
-## Available Scripts
+As an [assignment](https://gist.github.com/jaapbakker88/c1f3aea505801c5a5bf7b5acff459721) for an interview for Stream io, I was asked to create a dashboard, based on [this dribble](https://dribbble.com/shots/13940752-Dashboard-UI).
 
-In the project directory, you can run:
+## Design details:
+
+I tried to mimic the dashboard design as much as possible, but some things are missing:
+
+* The `border-radius` from the search input does not match with the guideline, since I used a pre-made component for that.
+* Graphs are placeholder images instead of *actual graphs*
+* The `IconButton`s from the cards do not have the `background-color` set since they were inconsistent.
+* The Banner's `border-radius` is the same in all borders (preview image has `bottom-right` without radius)
+* The avatar image does not have the `drop-down` arrow since its not implemented
+* The dashboard [font](https://www.fonts.com/font/linotype/neue-helvetica) was replaced since I didn't have it available  
+
+## Technical details:
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), on top of which I added some [dependencies](#dependencies).
+
+
+## To run the app
+
+In the project directory, you have to first run 
+`yarn install`. Available scripts:
 
 ### `yarn start`
 
@@ -12,11 +31,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
@@ -25,44 +39,19 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `yarn eject`
+Since I didn't have enough time to build the app, I used some already-made components to speed up the development process.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [RMWC](https://rmwc.io/) for the `Input`, `Icon` and `IconButton` components.
+* [react-router](https://reactrouter.com/) as the routing component.
+* The font icon library is from [Material icons](https://material.io/resources/icons).
+* Custom icons are from [flaticon](htt.ps://www.flaticon.com/).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Missing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Testing: CRA provides Jest as testing framework. I kept the original files but didn't add any tests.
+2. Responsiveness: Even though the dashboard resizes according screen size, the `drawer` is always open. I would have added a `hamburger` button to open/close it when using smaller screens.
+3. Functionality: I added a container page for each of the `drawer`'s links, but they are all blank (only an *under construction* sign is shown).
+5. Design system (I would have it complemented with [storybooks](https://storybook.js.org/) components)
+6. Animations (There is only a Ripple effect on the `IconButtons`)
