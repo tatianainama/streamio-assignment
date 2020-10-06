@@ -9,14 +9,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "add": "^2.0.6",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
+    "react-activity-feed": "^0.10.2",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-svg": "^11.0.39",
     "stream-chat": "^2.5.0",
-    "stream-chat-react": "^3.0.1"
+    "stream-chat-react": "^3.0.1",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

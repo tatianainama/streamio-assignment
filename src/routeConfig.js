@@ -4,6 +4,7 @@ import Organization from 'containers/Organization';
 import Department from 'containers/Department';
 import Settings from 'containers/Settings';
 import Chat from 'containers/Chat';
+import Feed from 'containers/Feed';
 
 const routes = [
   { icon: 'dashboard', label: 'dashboard', href: '/dashboard', component: Dashboard },
@@ -11,6 +12,7 @@ const routes = [
   { icon: 'secure-shield', label: 'organization', href: '/organization', component: Organization },
   { icon: 'shield', label: 'department', href: '/department', component: Department },
   { icon: 'doctor', label: 'chat', href: '/chat', component: Chat },
+  { icon: 'registered', label: 'feed', href: '/feed', component: Feed },
   { icon: 'apple', label: 'settings', href: '/settings', component: Settings }
 ];
 

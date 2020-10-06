@@ -6,7 +6,7 @@ import Avatar from 'components/Avatar';
 
 import './styles.css';
 
-const TopAppBar = () => {
+const TopAppBar = ({ children }) => {
   return (
     <div className="top-app-bar">
       <div className="top-app-bar__search">
@@ -15,7 +15,9 @@ const TopAppBar = () => {
       <div className="top-app-bar__actions">
         <div className="top-app-bar__actions__notifications">
           <IconButton icon="mail_outline"/>
-          <IconButton icon="notifications_none"/>
+          {
+            children
+          }
         </div>
         <div className="top-app-bar__actions__settings">
           <Avatar/>
